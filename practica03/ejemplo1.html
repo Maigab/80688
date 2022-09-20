@@ -2,10 +2,30 @@
 <html lang="en">
 <head>
     <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
          .padre{
         background-color:orange;
+        /*display: flex;
+        flex-direction: column;*/
         margin:10px;
         padding:10px;
+        border: 1px, solid black;
+        margin: 5px;
+    }
+
+    .hijo{
+        margin: 10px;
+        background-color: yellow;
+        margin: auto;
+        width: 40%;
+    }
+
+    .hijo2{
+        background-color: bisque;
+        width: 200px;
     }
     </style>
     <meta charset="UTF-8">
@@ -20,5 +40,29 @@
     <div class="padre">04</div>
     <div class="padre">05</div>
     
+    <div class="padre">
+        <!--div.hijo2{h$$}*5-->
+        <div class="hijo">h01</div>
+        <div class="hijo">h01</div>
+        <div class="hijo">h01</div>
+        <div class="hijo">h01</div>
+    </div>
+    <div class="padre">
+        <div class="hijo">h02</div>
+    </div>
+    <div class="padre">
+        <div class="hijo">h03</div>
+    </div>
+    <div class="padre">
+        <div class="hijo">h04</div>
+    </div>
+
+    <p class="padre">
+        <div class="hijo2">ph01</div>
+        <div class="hijo2">ph02</div>
+        <div class="hijo2">ph03</div>
+        <div class="hijo2">ph04</div>
+        <div class="hijo2">ph05</div>
+    </p>
 </body>
 </html>
