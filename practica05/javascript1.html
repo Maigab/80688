@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function cambiarColor(color) {
+            console.log("color recibido:",color)
+            var e = document.getElementById("titulo1")
+            e.style.color = color
+        }
+
+        function cambiarTodos(color){
+            console.log("Todos cambiaron a:",color)
+            var c = document.getElementsByTagName("h1")
+            for (let index = 0; index < c.length; index++) {
+                c[index].style.color = color  
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1 id="titulo1">este es un titulo 1</h1>
+    <h1 id="titulo2">este es un titulo 2</h1>
+    <h1 id="titulo3">este es un titulo 3</h1>
+    <h1 id="titulo4">este es un titulo 4</h1>
+    <h1 id="titulo5">este es un titulo 5</h1>
+    <button onclick="cambiarColor('Red')">Rojo</button>
+    <button onclick="cambiarColor('Green')">Verde</button>
+    <button onclick="cambiarTodos('Blue')">Todos azul</button>
+    <button onclick="cambiarTodos('black')">Todos negro</button>
+</body>
+</html>
