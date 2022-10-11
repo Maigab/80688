@@ -15,8 +15,27 @@
         function cambiarTodos(color){
             console.log("Todos cambiaron a:",color)
             var c = document.getElementsByTagName("h1")
-            for (let index = 0; index < c.length; index++) {
-                c[index].style.color = color  
+            //for (let index = 0; index < c.length; index++) {
+              //  c[index].style.color = color  
+            //}
+           // var arr =[].slice.call(c);
+            //arr.forEach(element => {
+              //  element.style.color = color
+            //});
+
+            //let i=0
+            //for (const p in c) {
+                //if(i < c.length)
+                //if(c[p] == "lenght")
+                //c[p].style.color = color
+                //i++
+           // }
+
+            for (const x in c) {
+                //if (Object.hasOwnProperty.call(c, x)) {
+                    if (c.hasOwnProperty(x)) {
+               const element = c[x].style.color = color;
+                }
             }
         }
     </script>
